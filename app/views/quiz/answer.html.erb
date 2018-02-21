@@ -1,17 +1,17 @@
 
 <h1>Question <%= @current + 1 %> of <%= @total %></h1>
-<p id="question"><%= @question.text %></p>
+<p id="question"><%= @question[:text] %></p>
 
 <div id="feedback-choices">
   <% @choices.each do |choice| %>
-	 <% if choice.correct %>
+	 <% if choice[:correct] %>
 		<p class="correct feedback-choice">
 	 <% elsif choice == @choice %>
 		<p class="incorrect feedback-choice">
 	 <% else %>
 		<p class="feedback-choice">
 	 <% end %>
-		<%= choice.text %>
+		<%= choice[:text] %>
 	 </p>
   <% end %>
 </div>
