@@ -1,0 +1,61 @@
+[{
+    "text": "Sufragio",
+    "correct": true,
+    "question_id": 1
+  },
+  {
+    "text": "Adagio",
+    "correct": false,
+    "question_id": 1
+  },
+  {
+    "text": "Naufragio",
+    "correct": false,
+    "question_id": 1
+  },
+  {
+    "text": "Prestigio",
+    "correct": false,
+    "question_id": 1
+  },
+  {
+    "text": "Irritable",
+    "correct": false,
+    "question_id": 2
+  },
+  {
+    "text": "Hambrienta",
+    "correct": true,
+    "question_id": 2
+  },
+  {
+    "text": "Furiosa",
+    "correct": false,
+    "question_id": 2
+  },
+  {
+    "text": "Asustada",
+    "correct": false,
+    "question_id": 2
+  },
+  {
+    "text": "Carabobo",
+    "correct": false,
+    "question_id": 3
+  },
+  {
+    "text": "Urica",
+    "correct": true,
+    "question_id": 3
+  },
+  {
+    "text": "Mucuritas",
+    "correct": false,
+    "question_id": 3
+  },
+  {
+    "text": "Calabozo",
+    "correct": false,
+    "question_id": 3
+  }
+]
