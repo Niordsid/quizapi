@@ -30,4 +30,4 @@ production:
   <<: *default
   database: quizapi_production
   username: quizapi
-  password: <%= ENV['TRESCICLAJEAPP_DATABASE_PASSWORD'] %>
+  password: <%= ENV['QUIZAPI_DATABASE_PASSWORD'] %>
