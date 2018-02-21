@@ -1,4 +1,23 @@
 Rails.application.routes.draw do
+
+
+  resources :questions
+
+  get "quiz/index"
+
+  post "quiz/new"
+
+  get "quiz/question"
+
+  post "quiz/question"
+
+  post "quiz/answer"
+
+  get "quiz/end"
+
+  post "choices/create"
+
+  post "choices/destroy"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
