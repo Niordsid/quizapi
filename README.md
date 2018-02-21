@@ -7,5 +7,6 @@ RESTFul API builded on ROR for Create Quizzes.
  - Execute bundle install for instal dependencies.
  - Execute rake db:create for create the database
  - Execute rake db:migrate for create the tables on the database
- - Add some Questions http://localhost:3000/questions/new for test the Quiz.
+ - Execute rake question:setup for seed the database with some questions
+   *If you wanna add more questions use the endpoint http://localhost:3000/questions/new*
  - For start the Quiz access to : http://localhost:3000/quiz/index
