@@ -1,14 +1,22 @@
+<div class="form-row">
+  <h1>Quiz Results</h1>
+</div>
+<div class="form-row">
+  <p id="question">You answered correctly <%= @correct %> out of <%= @total %> questions.</p>
+</div>
+<div class="form-row">
+  <p id="score"><%= @score %>%</p>
+</div>
+<div class="form-row">
+  <%= form_tag({:controller => "quiz", :action => "index"}, :method => "get") do %>
+    <div class="center">
+  	 <%= submit_tag("Take another quiz", :class => "btn btn-back") %>
+    </div>
+  <% end %>
+</div>
 
-<h1>Quiz Results</h1>
-<p id="question">You answered correctly <%= @correct %> out of <%= @total %> questions.</p>
 
-<p id="score"><%= @score %>%</p>
 
-<%= form_tag({:controller => "quiz", :action => "index"}, :method => "get") do %>
-  <div class="center">
-	 <%= submit_tag("Take another quiz", :class => "submit") %>
-  </div>
-<% end %>
 
 <% content_for(:title) do %>
   Quiz Results

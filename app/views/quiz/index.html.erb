@@ -1,15 +1,18 @@
+<div class="form-row">
+	<h1>Start Quiz</h1>
+</div>
+<div class="form-row">
+	<div class="form-group">
+		<p>This Quiz is composed of <%= @total %> random questions about general topics</p>
+	</div>
+	<div class="form-group">
+		<%= form_tag({:controller => "quiz",
+					  :action => "new"}) do %>
+		<%= submit_tag "Start!", :class => "btn btn-back"%>
+		<% end %>
+	</div>
 
-<h1>Start Quiz</h1>
-
-<%= form_tag({:controller => "quiz",
-				  :action => "new"}) do %>
-  <p>This Quiz is composed of 20 random questions about general topics</p>  
-
-  <div class="center">
-	 <%= submit_tag "Start!", :class => "submit"%>
-  </div>
-<% end %>
-
+</div>
 <% content_for(:title) do %>
-  Start Quiz
+Start Quiz
 <% end %>

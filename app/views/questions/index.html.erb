@@ -2,9 +2,9 @@
 <h1>Listing questions</h1>
 
 <p>Total: <%= @questions.size %></p>
-<p><%= link_to 'New Question', new_question_path %></p>
+<p><%= link_to 'New Question', new_question_path, class: "btn btn-back" %></p>
 
-<table border="1">
+<table class="table table-hover">
   <tr>
     <th>Text</th>
     <th>Choices</th>

@@ -1,45 +1,67 @@
+<div class="col-lg-12">
+  <div class="form-row form-paddin">
 
-<p id="notice"><%= notice %></p>
+    <label for="text" class="control-label">Question:</label>
+    <div class="form-group">
+      <div class="question">
+        <%= @question[:text] %>
+      </div>
+      <div class="form-group col-sm-offset-10">
+        <%= link_to 'Edit Question', edit_question_path(@question) , :class => 'btn btn-back'%>
+      </div>
+    </div>
 
-<p>
-  <b>Text:</b>
-  <%= @question.text %>
-</p>
-
-<h4>Choices</h4>
-<ul>
-  <% @question.choices.each do |choice| %>
-	 <li>
-		<%= choice.text %>
-		<% if choice.correct %> (Correct) <% end %>
-
-		<%= form_tag({:controller => "choices", :action => "destroy"}) do %>
-		  <%= hidden_field_tag :question, @question.id %>
-		  <%= hidden_field_tag :choice, choice.id %>
-		  <%= submit_tag "Delete" %>
-		<% end %>
-
-	 </li>
-  <% end %>
-</ul>
-
-<h5>New Choice</h5>
-<%= form_tag({:controller => "choices", :action => "create"}) do %>
-  <%= hidden_field_tag :question, @question.id %>
-
-  <%= label_tag :text, "Text" %><br />
-  <%= text_field_tag :text %>
-  <br />
-  <%= check_box_tag :correct %>
-  <%= label_tag :correct, "Correct" %>
-  <br />
-  <%= submit_tag "Create" %>
-<% end %>
-
-
-<%= link_to 'Edit', edit_question_path(@question) %> |
-<%= link_to 'Back', questions_path %>
-
-<% content_for(:title) do %>
+  </div>
+  <div class="form-row form-paddin">
+    <label for="text" class="control-label">Choices:</label>
+    <table class="table">
+      <tbody>
+        <% @question.choices.each do |choice| %>
+        <tr>
+          <td align="left">
+            <%= choice.text %>
+            <% if choice.correct %>
+            (Correct)
+            <% end %>
+          </td>
+          <td align="center">
+            <%= form_tag({:controller => "choices", :action => "destroy"}) do %>
+            <%= hidden_field_tag :question, @question.id %>
+            <%= hidden_field_tag :choice, choice.id %>
+            <%= submit_tag "Delete", :class => 'btn btn-back' %>
+            <% end %>
+          </td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  <div class="form-row form-paddin">
+    <label for="text" class="control-label">New Choice</label>
+    <%= form_tag({:controller => "choices", :action => "create"}) do %>
+    <%= hidden_field_tag :question, @question.id %>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="row col-sm-offset-1">
+          <div class="row">
+            <%= label_tag :text, "Text" %>
+            <%= text_field_tag :text, "",class: 'form-control'%>
+            <%= check_box_tag :correct %>
+            <%= label_tag :correct, "Correct"%>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 inner" align="center">
+        <br>
+        <%= submit_tag "Create", :class => 'btn btn-back' %>
+      </div>
+    </div>
+    <% end %>
+  </div>
+  <div class="form-paddin col-sm-offset-11">
+    <%= link_to 'Back', questions_path, :class => 'btn btn-back' %>
+  </div>
+  <% content_for(:title) do %>
   Question Details
-<% end %>
+  <% end %>
+</div>

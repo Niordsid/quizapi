@@ -18,10 +18,12 @@
   </div>
   <div class="form-row">
     <div class="form-group">
-        <%= f.submit 'Create Question', :class => 'btn btn-success' %>
+        <%= f.submit 'Create Question', :class => 'btn btn-back' %>
     </div>
   <div class="form-group">
-    <%= link_to 'Back', questions_path, :class => 'btn btn-info'%>
+    <div class="col-sm-offset-11">
+      <%= link_to 'Back', questions_path, :class => 'btn btn-back'%>
+    </div>
   </div>
 
   </div>
