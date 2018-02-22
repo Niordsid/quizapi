@@ -1,11 +1,11 @@
 class QuestionsController < ApplicationController
   def index
     @questions = Question.all
-    @questions.sort {|a,b| a.text <=> b.text}
+    @questions.sort_by(&:text)
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @questions }
+      format.xml  { render xml: @questions }
     end
   end
 
@@ -16,7 +16,7 @@ class QuestionsController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @question }
+      format.xml  { render xml: @question }
     end
   end
 
@@ -27,7 +27,7 @@ class QuestionsController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.xml  { render :xml => @question }
+      format.xml  { render xml: @question }
     end
   end
 
@@ -39,15 +39,15 @@ class QuestionsController < ApplicationController
   # POST /questions
   # POST /questions.xml
   def create
-    @question = Question.new(params[:question])
+    @question = Question.new(question_params)
 
     respond_to do |format|
       if @question.save
-        format.html { redirect_to(@question, :notice => 'Question was successfully created.') }
-        format.xml  { render :xml => @question, :status => :created, :location => @question }
+        format.html { redirect_to(@question, notice: 'Question was successfully created.') }
+        format.xml  { render xml: @question, status: :created, location: @question }
       else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @question.errors, :status => :unprocessable_entity }
+        format.html { render action: 'new' }
+        format.xml  { render xml: @question.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -59,11 +59,11 @@ class QuestionsController < ApplicationController
 
     respond_to do |format|
       if @question.update_attributes(params[:question])
-        format.html { redirect_to(@question, :notice => 'Question was successfully updated.') }
+        format.html { redirect_to(@question, notice: 'Question was successfully updated.') }
         format.xml  { head :ok }
       else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @question.errors, :status => :unprocessable_entity }
+        format.html { render action: 'edit' }
+        format.xml  { render xml: @question.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -78,5 +78,11 @@ class QuestionsController < ApplicationController
       format.html { redirect_to(questions_url) }
       format.xml  { head :ok }
     end
+  end
+
+  private
+
+  def question_params
+    params.require(:question).permit(:text)
   end
 end
