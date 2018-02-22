@@ -1,8 +1,89 @@
+.container {
+  font-family: 'Raleway', sans-serif;
+  min-width: 310px;
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto
+}
 
- .container {
-   font-family: 'Raleway', sans-serif;
-   min-width: 310px;
-   max-width: 800px;
-   height: 400px;
-   margin: 0 auto
- }
+.section {
+  height: 100vh;
+}
+
+.grapone {
+  padding-top: 40px;
+  border-bottom: 0.5px solid #D8D8D8;
+}
+
+.control-label {
+  font-size: 20px;
+  color: #6E6E6E;
+  padding-bottom: 5px;
+}
+
+.question {
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  color: #6E6E6E;
+  padding-bottom: 5px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.form-paddin {
+  padding-top: 15px;
+}
+
+.correct{
+  font-style: bold;
+}
+
+.inner{
+  display: inline-block;
+}
+.btn-back {
+  color: #ffffff;
+  background-color: #299E60;
+  border-color: #FFFFFF;
+}
+
+.btn-back:hover,
+.btn-back:focus,
+.btn-back:active,
+.btn-back.active,
+.open .dropdown-toggle.btn-back {
+  color: #ffffff;
+  background-color: #247A58;
+  border-color: #FFFFFF;
+}
+
+.btn-back:active,
+.btn-back.active,
+.open .dropdown-toggle.btn-back {
+  background-image: none;
+}
+
+.btn-back.disabled,
+.btn-back[disabled],
+fieldset[disabled] .btn-back,
+.btn-back.disabled:hover,
+.btn-back[disabled]:hover,
+fieldset[disabled] .btn-back:hover,
+.btn-back.disabled:focus,
+.btn-back[disabled]:focus,
+fieldset[disabled] .btn-back:focus,
+.btn-back.disabled:active,
+.btn-back[disabled]:active,
+fieldset[disabled] .btn-back:active,
+.btn-back.disabled.active,
+.btn-back[disabled].active,
+fieldset[disabled] .btn-back.active {
+  background-color: #299E60;
+  border-color: #FFFFFF;
+}
+
+.btn-back .badge {
+  color: #299E60;
+  background-color: #ffffff;
+}
