@@ -57,5 +57,345 @@
     "text": "Calabozo",
     "correct": false,
     "question_id": 3
+  },
+  {
+    "text": "Cejas",
+    "correct": false,
+    "question_id": 4
+  },
+  {
+    "text": "Pupilas",
+    "correct": false,
+    "question_id": 4
+  },
+  {
+    "text": "Parpados",
+    "correct": true,
+    "question_id": 4
+  },
+  {
+    "text": "Anteojos",
+    "correct": false,
+    "question_id": 4
+  },
+  {
+    "text": "Calcio",
+    "correct": false,
+    "question_id": 5
+  },
+  {
+    "text": "Pigmentacion",
+    "correct": true,
+    "question_id": 5
+  },
+  {
+    "text": "Vitamina A",
+    "correct": false,
+    "question_id": 5
+  },
+  {
+    "text": "Oxigeno",
+    "correct": false,
+    "question_id": 5
+  },
+  {
+    "text": "Dinamometro",
+    "correct": false,
+    "question_id": 6
+  },
+  {
+    "text": "Micrometro",
+    "correct": false,
+    "question_id": 6
+  },
+  {
+    "text": "Oleometro",
+    "correct": true,
+    "question_id": 6
+  },
+  {
+    "text": "Holometro",
+    "correct": false,
+    "question_id": 6
+  },
+  {
+    "text": "Roman Polanski",
+    "correct": false,
+    "question_id": 7
+  },
+  {
+    "text": "Franco Zeffirelli",
+    "correct": false,
+    "question_id": 7
+  },
+  {
+    "text": "Francis Ford Copolla",
+    "correct": true,
+    "question_id": 7
+  },
+  {
+    "text": "Federico Fellini",
+    "correct": false,
+    "question_id": 7
+  },
+  {
+    "text": "Topografia",
+    "correct": true,
+    "question_id": 8
+  },
+  {
+    "text": "Serigrafia",
+    "correct": false,
+    "question_id": 8
+  },
+  {
+    "text": "Epigrafia",
+    "correct": false,
+    "question_id": 8
+  },
+  {
+    "text": "Holografia",
+    "correct": false,
+    "question_id": 8
+  },
+  {
+    "text": "Japones",
+    "correct": false,
+    "question_id": 9
+  },
+  {
+    "text": "Griego",
+    "correct": false,
+    "question_id": 9
+  },
+  {
+    "text": "Hebreo",
+    "correct": true,
+    "question_id": 9
+  },
+  {
+    "text": "Chino",
+    "correct": false,
+    "question_id": 9
+  },
+  {
+    "text": "Holanda",
+    "correct": false,
+    "question_id": 10
+  },
+  {
+    "text": "Suecia",
+    "correct": false,
+    "question_id": 10
+  },
+  {
+    "text": "Dinamarca",
+    "correct": false,
+    "question_id": 10
+  },
+  {
+    "text": "Belgica",
+    "correct": true,
+    "question_id": 10
+  },
+  {
+    "text": "Percusion",
+    "correct": true,
+    "question_id": 11
+  },
+  {
+    "text": "Viento Metal",
+    "correct": false,
+    "question_id": 11
+  },
+  {
+    "text": "Viento Madera",
+    "correct": false,
+    "question_id": 11
+  },
+  {
+    "text": "Cuerda",
+    "correct": false,
+    "question_id": 11
+  },
+  {
+    "text": "Mamifero",
+    "correct": false,
+    "question_id": 12
+  },
+  {
+    "text": "Ave",
+    "correct": false,
+    "question_id": 12
+  },
+  {
+    "text": "Insecto",
+    "correct": true,
+    "question_id": 12
+  },
+  {
+    "text": "Reptil",
+    "correct": false,
+    "question_id": 12
+  },
+  {
+    "text": "Odio",
+    "correct": false,
+    "question_id": 13
+  },
+  {
+    "text": "Miedo",
+    "correct": false,
+    "question_id": 13
+  },
+  {
+    "text": "Amor",
+    "correct": true,
+    "question_id": 13
+  },
+  {
+    "text": "Trabajo",
+    "correct": false,
+    "question_id": 13
+  },
+  {
+    "text": "Vandalo",
+    "correct": false,
+    "question_id": 14
+  },
+  {
+    "text": "Canibal",
+    "correct": true,
+    "question_id": 14
+  },
+  {
+    "text": "Miserable",
+    "correct": false,
+    "question_id": 14
+  },
+  {
+    "text": "Sofista",
+    "correct": false,
+    "question_id": 14
+  },
+  {
+    "text": "Matutino",
+    "correct": false,
+    "question_id": 15
+  },
+  {
+    "text": "Vespertino",
+    "correct": true,
+    "question_id": 15
+  },
+  {
+    "text": "Clandestino",
+    "correct": false,
+    "question_id": 15
+  },
+  {
+    "text": "Pristino",
+    "correct": false,
+    "question_id": 15
+  },
+  {
+    "text": "Oklahoma",
+    "correct": false,
+    "question_id": 16
+  },
+  {
+    "text": "Nevada",
+    "correct": true,
+    "question_id": 16
+  },
+  {
+    "text": "Arizona",
+    "correct": false,
+    "question_id": 16
+  },
+  {
+    "text": "Colorado",
+    "correct": false,
+    "question_id": 16
+  },
+  {
+    "text": "La ardilla",
+    "correct": false,
+    "question_id": 17
+  },
+  {
+    "text": "El caracol",
+    "correct": false,
+    "question_id": 17
+  },
+  {
+    "text": "el loro",
+    "correct": false,
+    "question_id": 17
+  },
+  {
+    "text": "la vaca",
+    "correct": true,
+    "question_id": 17
+  },
+  {
+    "text": "licuefaccion",
+    "correct": false,
+    "question_id": 18
+  },
+  {
+    "text": "Infiltracion",
+    "correct": false,
+    "question_id": 18
+  },
+  {
+    "text": "Evaporacion",
+    "correct": true,
+    "question_id": 18
+  },
+  {
+    "text": "Sublimacion",
+    "correct": false,
+    "question_id": 18
+  },
+  {
+    "text": "Peninsula Italica",
+    "correct": true,
+    "question_id": 19
+  },
+  {
+    "text": "Caucaso",
+    "correct": false,
+    "question_id": 19
+  },
+  {
+    "text": "Norte de Africa",
+    "correct": false,
+    "question_id": 19
+  },
+  {
+    "text": "Extremo Oriente",
+    "correct": false,
+    "question_id": 19
+  },
+  {
+    "text": "Ovarios",
+    "correct": false,
+    "question_id": 20
+  },
+  {
+    "text": "Craneo",
+    "correct": true,
+    "question_id": 20
+  },
+  {
+    "text": "Pulmones",
+    "correct": false,
+    "question_id": 20
+  },
+  {
+    "text": "Higado",
+    "correct": false,
+    "question_id": 20
   }
 ]

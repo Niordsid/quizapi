@@ -1,10 +1,10 @@
 class QuizController < ApplicationController
   def index
-    @total = Question.all.count
+    @total = 20
   end
 
   def new
-    total = Question.all.count
+    total = 20
     all = Question.all.map(&:id)
     session[:questions] = all.sort_by { rand }[0..(total - 1)]
 
